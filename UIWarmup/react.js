@@ -1,8 +1,10 @@
 
 //Walk through this file and explain what it does
 
+// 1. review React documentation
+
 import React, {useState} from 'react';
-import {View, Text} from 'react-native';
+import {View, Text} from 'react-native';    // View is a container that supports layout with flexbox, style, some touch handling, and accessibility controls. Text is a component for displaying text; supports nexting, styling, touch handling.
 import Button from 'CatalystPortalMobile/src/components/button';
 
 import StringComponent from 'CatalystPortalMobile/src/components/form/string';
@@ -47,7 +49,7 @@ const Form = ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    e.stopPropagation();
+    e.stopPropagation();    // prevents further propogation of the current event in the capturing and bubbling phases. it does not prevent default behaviors from occurring (clicks on links are still processed)
     onSubmit(field_values);
   };
 
@@ -83,3 +85,6 @@ const Form = ({
 };
 
 export default Form;
+
+
+// answer: form where each component handles its own data
