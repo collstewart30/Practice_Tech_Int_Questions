@@ -1,0 +1,13 @@
+Create a class that contains a list of products. 
+It should have a method to add a new product to the list of products
+and a method to return the lowest priced product of a certain type.
+
+Each product will have the following properties:
+    Name
+    Price
+    Type
+
+The type can only be one of the follow:
+    Educational
+    Business
+    Entertainment

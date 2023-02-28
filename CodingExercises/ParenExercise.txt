@@ -1,0 +1,9 @@
+Create a method that takes a string and returns whether or not the parenthesis are balanced.
+
+"(())" - pass
+"()()" - pass
+"((())())" - pass
+
+")(" - fail
+"())(" - fail
+"())(()" - fail
